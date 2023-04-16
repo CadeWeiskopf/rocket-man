@@ -1,7 +1,14 @@
 export default function Home() {
   return (
     <>
-      <button className="bordered-button">Click me</button>
+      <button
+        className="gradient-button"
+        onClick={() => {
+          alert("click");
+        }}
+      >
+        Click me
+      </button>
     </>
   );
 }
