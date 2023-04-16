@@ -19,8 +19,7 @@
   position: relative;
 }
 
-.gradient-button::before,
-.gradient-button::after {
+.gradient-button::before {
   content: "";
   position: absolute;
   width: 100%;
