@@ -17,6 +17,8 @@
   padding: 10px 20px;
   font-size: 16px;
   position: relative;
+  border-radius: 10px;
+  caret-color: transparent;
 }
 
 .gradient-button::before {
@@ -25,9 +27,6 @@
   width: 100%;
   height: 100%;
   border: 2px solid transparent;
-}
-
-.gradient-button::before {
   top: -0.15rem;
   left: -0.15rem;
   background: linear-gradient(
@@ -47,4 +46,50 @@
     0.2rem calc(100% - 0.4rem), 100% 0.2rem;
   background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
   background-repeat: no-repeat;
+  border-radius: 12px;
+  animation: gradient-animation 10s linear infinite;
+}
+@keyframes gradient-animation {
+  100% {
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      );
+  }
 }
