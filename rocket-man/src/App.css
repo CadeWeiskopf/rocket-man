@@ -9,3 +9,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-image: linear-gradient(
+      to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      indigo,
+      violet
+    )
+    1;
+  border-image-slice: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+}
