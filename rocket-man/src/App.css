@@ -40,9 +40,9 @@
       indigo,
       violet
     ),
-    linear-gradient(to right, violet, red, orange, yellow, green, blue, indigo),
-    linear-gradient(to bottom, indigo, violet, red, orange, yellow, green, blue),
-    linear-gradient(to left, blue, indigo, violet, red, orange, yellow, green);
+    linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red),
+    linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet),
+    linear-gradient(to left, violet, indigo, blue, green, yellow, orange, reds);
   background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
     0.2rem calc(100% - 0.4rem), 100% 0.2rem;
   background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
