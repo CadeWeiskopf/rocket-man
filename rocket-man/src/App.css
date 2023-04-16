@@ -122,8 +122,380 @@
   background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
   background-repeat: no-repeat;
   border-radius: 12px;
-  animation: gradient-animation 5s linear infinite;
+  animation: gradient-animation 1s linear infinite;
 }
+
+@keyframes gradient-animation {
+  0% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  14.2% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  28.4% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        indigo,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        indigo,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  42.3% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        indigo,
+        blue,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  56.7% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        indigo,
+        blue,
+        green,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  71% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  85.4% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  100% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to bottom,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+}
+/*
 @keyframes gradient-animation {
   0% {
     z-index: 2;
@@ -574,3 +946,4 @@
     animation: gradient-animation 10s linear infinite;
   }
 }
+*/
