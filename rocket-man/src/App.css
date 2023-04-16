@@ -28,11 +28,54 @@
   z-index: 1;
   overflow: hidden;
 }
+.gradient-button-text-span {
+  z-index: 3;
+}
 .gradient-button-wrapper {
   padding: 1.9rem;
   position: absolute;
   border: solid violet;
   border-radius: 10px;
+}
+.gradient-button-topleft-mask {
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: solid black;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+.gradient-button-topright-mask {
+  top: 0;
+  right: 0;
+  position: absolute;
+  border: solid black;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+.gradient-button-bottomleft-mask {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border: solid black;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+.gradient-button-bottomright-mask {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  border: solid black;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
 }
 .gradient-button::before {
   z-index: 2;
