@@ -1,3 +1,7 @@
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <button className="bordered-button">Click me</button>
+    </>
+  );
 }

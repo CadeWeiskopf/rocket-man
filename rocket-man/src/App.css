@@ -11,21 +11,20 @@
 }
 
 button {
-  background-color: white;
-  color: black;
-  border: none;
+  background-color: black;
+  color: white;
   border-image: linear-gradient(
-      to right,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      indigo,
-      violet
-    )
-    1;
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
   border-image-slice: 1;
+
   padding: 10px 20px;
   font-size: 16px;
 }
