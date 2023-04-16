@@ -26,6 +26,7 @@
   border-radius: 10px;
   caret-color: transparent;
   z-index: 1;
+  overflow: hidden;
 }
 .gradient-button-wrapper {
   padding: 1.9rem;
