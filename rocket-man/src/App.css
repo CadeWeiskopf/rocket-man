@@ -32,20 +32,38 @@
   z-index: 3;
 }
 .gradient-button-wrapper {
-  padding: 1.9rem;
+  padding: 1.91rem;
   position: absolute;
   border: solid violet;
   border-radius: 10px;
 }
 .gradient-button-topleft-mask {
-  top: 0;
+  /*top: 0;
   left: 0;
   position: absolute;
-  border: solid transparent;
-  border-radius: 10px;
+  border: solid 10px black;
+  width: 50%;
+  height: 50%;
+  z-index: 1;*/
+  top: 5px;
+  left: 0;
+  position: absolute;
+  border: solid black;
   width: 50%;
   height: 50%;
   z-index: 1;
+}
+.gradient-button-topleft-mask2 {
+  position: absolute;
+  top: -12px;
+  width: 50px;
+  height: 50px;
+  background: black;
+  left: 2px;
+}
+@keyframes show-topleft-corner {
+  0% {
+  }
 }
 .gradient-button-topright-mask {
   top: 0;
