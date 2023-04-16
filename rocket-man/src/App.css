@@ -11,6 +11,12 @@
 }
 
 .gradient-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
   background-color: black;
   color: white;
   border: none;
@@ -19,9 +25,16 @@
   position: relative;
   border-radius: 10px;
   caret-color: transparent;
+  z-index: 1;
 }
-
+.gradient-button-wrapper {
+  padding: 1.86rem;
+  position: absolute;
+  border: solid;
+  border-radius: 10px;
+}
 .gradient-button::before {
+  z-index: 2;
   content: "";
   position: absolute;
   width: 100%;
