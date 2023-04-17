@@ -1070,4 +1070,316 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
+  53.57% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  53.57% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  53.57% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        green,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  53.57% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  53.57% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  53.57% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      ),
+      linear-gradient(
+        to right,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
 }
