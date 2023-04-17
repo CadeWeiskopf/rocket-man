@@ -31,24 +31,21 @@
 .gradient-button-text-span {
   z-index: 3;
 }
-.gradient-button-wrapper {
-  padding: 1.91rem;
+.gradient-button-wrapper-topleft {
+  width: 20%;
+  height: 20%;
   position: absolute;
-  border: solid violet;
+  border: solid violet 2px;
   border-radius: 10px;
+  left: 0;
+  top: 0;
 }
 .gradient-button-topleft-mask {
-  /*top: 0;
-  left: 0;
-  position: absolute;
-  border: solid 10px black;
-  width: 50%;
-  height: 50%;
-  z-index: 1;*/
   top: 5px;
   left: 0;
   position: absolute;
   border: solid black;
+  background: black;
   width: 50%;
   height: 50%;
   z-index: 1;
@@ -66,11 +63,20 @@
   }
 }
 .gradient-button-topright-mask {
-  top: 0;
+  top: 5px;
   right: 0;
   position: absolute;
   border: solid black;
-  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+.gradient-button-topright-mask2 {
+  top: -12px;
+  right: 2px;
+  position: absolute;
+  border: solid black;
+  background: black;
   width: 50%;
   height: 50%;
   z-index: 1;
