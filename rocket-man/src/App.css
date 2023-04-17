@@ -39,6 +39,7 @@
   border-radius: 10px;
   left: 0;
   top: 0;
+  filter: brightness(200%);
 }
 .gradient-button-topleft-mask {
   top: 6px;
@@ -65,6 +66,7 @@
   border-radius: 10px;
   right: 0;
   top: 0;
+  filter: brightness(200%);
 }
 .gradient-button-topright-mask {
   top: 6px;
@@ -91,6 +93,7 @@
   border-radius: 10px;
   right: 0;
   bottom: 0;
+  filter: brightness(200%);
 }
 .gradient-button-bottomright-mask {
   bottom: 6px;
@@ -117,6 +120,7 @@
   border-radius: 10px;
   left: 0;
   bottom: 0;
+  filter: brightness(200%);
 }
 .gradient-button-bottomleft-mask {
   bottom: 6px;
@@ -143,6 +147,7 @@
   height: 100%;
   border: 2px solid transparent;
   top: -0.15rem;
+  filter: brightness(200%);
   left: -0.15rem;
   background: linear-gradient(
       to top,
@@ -162,7 +167,7 @@
   background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
   background-repeat: no-repeat;
   border-radius: 12px;
-  animation: gradient-animation 1s linear infinite;
+  animation: gradient-animation 2s linear infinite;
 }
 
 @keyframes gradient-animation {
@@ -221,7 +226,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-  7.1% {
+  3.57% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -276,7 +281,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-  14.2% {
+  7.14% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -331,7 +336,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-  21.3% {
+  10.71% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -386,7 +391,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-  28.4% {
+  14.28% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -441,7 +446,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-  35.5% {
+  17.85% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -496,7 +501,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-  42.6% {
+  21.42% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -551,7 +556,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-  49.7% {
+  24.99% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -588,10 +593,7 @@
     background-repeat: no-repeat;
     border-radius: 12px;
   }
-}
-/*
-@keyframes gradient-animation {
-  0% {
+  28.56% {
     z-index: 2;
     content: "";
     position: absolute;
@@ -612,398 +614,6 @@
       ),
       linear-gradient(
         to right,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to bottom,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to left,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      );
-    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
-      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
-    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
-  }
-  5% {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    top: -0.15rem;
-    left: -0.15rem;
-    background: linear-gradient(
-        to top,
-        transparent,
-        orange,
-        yellow,
-        green,
-        blue,
-        indigo,
-        violet
-      ),
-      linear-gradient(
-        to right,
-        violet,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to bottom,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to left,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      );
-    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
-      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
-    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
-  }
-  10% {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    top: -0.15rem;
-    left: -0.15rem;
-    background: linear-gradient(
-        to top,
-        transparent,
-        transparent,
-        yellow,
-        green,
-        blue,
-        indigo,
-        violet
-      ),
-      linear-gradient(
-        to right,
-        violet,
-        indigo,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to bottom,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to left,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      );
-    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
-      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
-    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
-  }
-  15% {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    top: -0.15rem;
-    left: -0.15rem;
-    background: linear-gradient(
-        to top,
-        transparent,
-        transparent,
-        transparent,
-        green,
-        blue,
-        indigo,
-        violet
-      ),
-      linear-gradient(
-        to right,
-        violet,
-        indigo,
-        blue,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to bottom,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to left,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      );
-    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
-      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
-    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
-  }
-  20% {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    top: -0.15rem;
-    left: -0.15rem;
-    background: linear-gradient(
-        to top,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        blue,
-        indigo,
-        violet
-      ),
-      linear-gradient(
-        to right,
-        violet,
-        indigo,
-        blue,
-        green,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to bottom,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to left,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      );
-    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
-      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
-    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
-  }
-  25% {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    top: -0.15rem;
-    left: -0.15rem;
-    background: linear-gradient(
-        to top,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        indigo,
-        violet
-      ),
-      linear-gradient(
-        to right,
-        violet,
-        indigo,
-        blue,
-        green,
-        yellow,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to bottom,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to left,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      );
-    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
-      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
-    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
-  }
-  30% {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    top: -0.15rem;
-    left: -0.15rem;
-    background: linear-gradient(
-        to top,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        violet
-      ),
-      linear-gradient(
-        to right,
-        violet,
-        indigo,
-        blue,
-        green,
-        yellow,
-        orange,
-        transparent
-      ),
-      linear-gradient(
-        to bottom,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to left,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      );
-    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
-      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
-    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
-  }
-  35% {
-    z-index: 2;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid transparent;
-    top: -0.15rem;
-    left: -0.15rem;
-    background: linear-gradient(
-        to top,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to right,
         violet,
         indigo,
         blue,
@@ -1012,8 +622,375 @@
         orange,
         red
       ),
+      linear-gradient(to top, violet, indigo, blue, green, yellow, orange, red),
+      linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  32.13% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        transparent
+      ),
       linear-gradient(
-        to bottom,
+        to right,
+        transparent,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  35.7% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        blue,
+        green,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  39.27% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        green,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        green,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        green,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  42.84% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        yellow,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        yellow,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        yellow,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  46.41% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        orange,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        orange,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        orange,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  49.98% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+  50% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to top,
         transparent,
         transparent,
         transparent,
@@ -1037,7 +1014,60 @@
     background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
     background-repeat: no-repeat;
     border-radius: 12px;
-    animation: gradient-animation 10s linear infinite;
+  }
+  53.57% {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    top: -0.15rem;
+    left: -0.15rem;
+    background: linear-gradient(
+        to top,
+        red,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        red
+      ),
+      linear-gradient(
+        to top,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        red
+      ),
+      linear-gradient(
+        to left,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        transparent,
+        red
+      );
+    background-size: 0.2rem calc(100% - 0.4rem), 100% 0.2rem,
+      0.2rem calc(100% - 0.4rem), 100% 0.2rem;
+    background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
+    background-repeat: no-repeat;
+    border-radius: 12px;
   }
 }
-*/
