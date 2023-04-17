@@ -110,6 +110,59 @@
   right: 0;
   top: 0;
   filter: brightness(200%);
+  animation: corner-red-right-animation 3s step-end infinite;
+}
+@keyframes corner-red-right-animation {
+  0% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid transparent;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    filter: brightness(200%);
+  }
+  24.99% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid red;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    filter: brightness(200%);
+  }
+  50% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid transparent;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    filter: brightness(200%);
+  }
+  53.57% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid red;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    filter: brightness(200%);
+  }
+  78.56% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid transparent;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    filter: brightness(200%);
+  }
 }
 .gradient-button-topright-mask {
   top: 6px;
@@ -138,23 +191,6 @@
   bottom: 0;
   filter: brightness(200%);
   animation: corner-violet-right-animation 3s step-end infinite;
-}
-.gradient-button-bottomright-mask {
-  bottom: 6px;
-  right: 0;
-  position: absolute;
-  background: black;
-  width: 1rem;
-  height: 1rem;
-  z-index: 1;
-}
-.gradient-button-bottomright-mask2 {
-  position: absolute;
-  bottom: -15px;
-  right: 5px;
-  width: 1rem;
-  height: 1rem;
-  background: black;
 }
 @keyframes corner-violet-right-animation {
   0% {
@@ -198,6 +234,23 @@
     filter: brightness(200%);
   }
 }
+.gradient-button-bottomright-mask {
+  bottom: 6px;
+  right: 0;
+  position: absolute;
+  background: black;
+  width: 1rem;
+  height: 1rem;
+  z-index: 1;
+}
+.gradient-button-bottomright-mask2 {
+  position: absolute;
+  bottom: -15px;
+  right: 5px;
+  width: 1rem;
+  height: 1rem;
+  background: black;
+}
 .gradient-button-wrapper-bottomleft {
   width: 15%;
   height: 15%;
@@ -207,6 +260,7 @@
   left: 0;
   bottom: 0;
   filter: brightness(200%);
+  animation: corner-red-left-animation 3s step-end infinite;
 }
 .gradient-button-bottomleft-mask {
   bottom: 6px;
@@ -216,6 +270,58 @@
   width: 1rem;
   height: 1rem;
   z-index: 1;
+}
+@keyframes corner-red-left-animation {
+  0% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid transparent;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    filter: brightness(200%);
+  }
+  24.99% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid red;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    filter: brightness(200%);
+  }
+  50% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid transparent;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    filter: brightness(200%);
+  }
+  53.57% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid red;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    filter: brightness(200%);
+  }
+  78.56% {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    border: solid transparent;
+    border-radius: 10px;
+    bottom: 0;
+    left: 0;
+    filter: brightness(200%);
+  }
 }
 .gradient-button-bottomleft-mask2 {
   position: absolute;
@@ -253,7 +359,7 @@
   background-position: 0px 0.2rem, left top, right 0.2rem, right bottom;
   background-repeat: no-repeat;
   border-radius: 12px;
-  animation: gradient-animation 3s linear infinite;
+  animation: gradient-animation 3s ease-in-out infinite;
 }
 
 @keyframes gradient-animation {
