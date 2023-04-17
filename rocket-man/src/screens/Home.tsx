@@ -1,6 +1,7 @@
 export default function Home() {
   return (
     <>
+      <h3>Ready?</h3>
       <button className="gradient-button">
         <div className="gradient-button-topleft-mask">
           <div className="gradient-button-topleft-mask2"></div>
