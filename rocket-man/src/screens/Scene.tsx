@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
 import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader.js";
@@ -9,7 +9,17 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 export default function Scene() {
   const mountRef = useRef<HTMLDivElement>(null);
-
+  const [keysPressed, setKeysPressed] = useState<{
+    [ArrowUp: string]: boolean;
+    ArrowDown: boolean;
+    KeyW: boolean;
+    KeyS: boolean;
+  }>({
+    ArrowUp: false,
+    ArrowDown: false,
+    KeyW: false,
+    KeyS: false,
+  });
   useEffect(() => {
     // create a new scene
     const scene = new THREE.Scene();
@@ -45,6 +55,9 @@ export default function Scene() {
         rocketObject.scale.z = 5;
 
         rocketObject.position.y = -2;
+
+        rocketObject.name = "rocket";
+
         scene.add(rocketObject);
       });
     });
@@ -52,15 +65,40 @@ export default function Scene() {
     // load the EXR environment map
     const gltfLoader = new GLTFLoader();
     gltfLoader.load("ge.glb", (gltf) => {
-      const cube = gltf.scene.children[0];
       scene.add(gltf.scene);
     });
 
     const animate = () => {
       requestAnimationFrame(animate);
+      const rocket = scene.getObjectByName("rocket");
+      if (rocket) {
+        if (keysPressed.ArrowUp) {
+          rocket.rotateX(-0.1);
+        } else if (keysPressed.ArrowDown) {
+          rocket.rotateX(0.1);
+        }
+
+        if (keysPressed.KeyW) {
+          rocket.translateY(0.1);
+        } else if (keysPressed.KeyS) {
+          rocket.translateY(-0.1);
+        }
+      }
       renderer.render(scene, camera);
     };
     animate();
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      keysPressed[event.code] = true;
+      setKeysPressed(keysPressed);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+
+    const handleKeyUp = (event: KeyboardEvent) => {
+      keysPressed[event.code] = false;
+      setKeysPressed(keysPressed);
+    };
+    window.addEventListener("keyup", handleKeyUp);
 
     const handleResize = () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -70,6 +108,7 @@ export default function Scene() {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
 
