@@ -66,6 +66,8 @@ export default function Scene() {
 
         rocketObject.name = "rocket";
 
+        rocketObject.children.push(camera);
+
         scene.add(rocketObject);
       });
     });
