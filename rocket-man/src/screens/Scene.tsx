@@ -12,13 +12,21 @@ export default function Scene() {
   const [keysPressed, setKeysPressed] = useState<{
     [ArrowUp: string]: boolean;
     ArrowDown: boolean;
+    ArrowLeft: boolean;
+    ArrowRight: boolean;
     KeyW: boolean;
+    KeyA: boolean;
     KeyS: boolean;
+    KeyD: boolean;
   }>({
     ArrowUp: false,
     ArrowDown: false,
+    ArrowLeft: false,
+    ArrowRight: false,
     KeyW: false,
+    KeyA: false,
     KeyS: false,
+    KeyD: false,
   });
   useEffect(() => {
     // create a new scene
@@ -73,15 +81,29 @@ export default function Scene() {
       const rocket = scene.getObjectByName("rocket");
       if (rocket) {
         if (keysPressed.ArrowUp) {
-          rocket.rotateX(-0.1);
-        } else if (keysPressed.ArrowDown) {
-          rocket.rotateX(0.1);
+          rocket.rotateX(-0.01);
+        }
+        if (keysPressed.ArrowDown) {
+          rocket.rotateX(0.01);
+        }
+        if (keysPressed.ArrowLeft) {
+          rocket.rotateZ(0.01);
+        }
+        if (keysPressed.ArrowRight) {
+          rocket.rotateZ(-0.01);
         }
 
         if (keysPressed.KeyW) {
           rocket.translateY(0.1);
-        } else if (keysPressed.KeyS) {
+        }
+        if (keysPressed.KeyS) {
           rocket.translateY(-0.1);
+        }
+        if (keysPressed.KeyA) {
+          //rocket.translateX(-0.1);
+        }
+        if (keysPressed.KeyD) {
+          //rocket.translateX(0.1);
         }
       }
       renderer.render(scene, camera);
@@ -89,6 +111,7 @@ export default function Scene() {
     animate();
 
     const handleKeyDown = (event: KeyboardEvent) => {
+      console.log(event.code);
       keysPressed[event.code] = true;
       setKeysPressed(keysPressed);
     };
