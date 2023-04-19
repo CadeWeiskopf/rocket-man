@@ -1,8 +1,16 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <h3>Ready?</h3>
-      <button className="gradient-button">
+      <button
+        className="gradient-button"
+        onClick={() => {
+          navigate("/scene");
+        }}
+      >
         <div className="gradient-button-topleft-mask">
           <div className="gradient-button-topleft-mask2"></div>
         </div>

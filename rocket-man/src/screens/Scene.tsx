@@ -39,8 +39,11 @@ export default function Scene() {
       materials.preload();
       const objLoader = new OBJLoader();
       objLoader.setMaterials(materials);
-      objLoader.load("rocket.obj", (object) => {
-        scene.add(object);
+      objLoader.load("rocket.obj", (rocketObject) => {
+        rocketObject.scale.x = 5;
+        rocketObject.scale.y = 5;
+        rocketObject.scale.z = 5;
+        scene.add(rocketObject);
       });
     });
 
