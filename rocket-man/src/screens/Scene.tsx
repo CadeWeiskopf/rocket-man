@@ -43,6 +43,8 @@ export default function Scene() {
         rocketObject.scale.x = 5;
         rocketObject.scale.y = 5;
         rocketObject.scale.z = 5;
+
+        rocketObject.position.y = -2;
         scene.add(rocketObject);
       });
     });
