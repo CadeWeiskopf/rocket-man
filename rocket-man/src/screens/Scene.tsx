@@ -7,6 +7,9 @@ import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 import { EXRLoader } from "three/examples/jsm/loaders/EXRLoader.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
+const ROTATE_SPEED = 0.02;
+const NEG_ROTATE_SPEED = -0.02;
+
 export default function Scene() {
   const mountRef = useRef<HTMLDivElement>(null);
   const [keysPressed, setKeysPressed] = useState<{
@@ -62,13 +65,16 @@ export default function Scene() {
         rocketObject.scale.y = 5;
         rocketObject.scale.z = 5;
 
+        rocketObject.rotateX(-45);
+
         rocketObject.position.y = -2;
 
-        rocketObject.name = "rocket";
+        const rocketParent = new THREE.Object3D();
+        rocketParent.name = "rocket";
+        rocketParent.add(camera);
+        rocketParent.add(rocketObject);
 
-        rocketObject.add(camera);
-        camera.position.z = 1;
-        scene.add(rocketObject);
+        scene.add(rocketParent);
       });
     });
 
@@ -83,23 +89,23 @@ export default function Scene() {
       const rocket = scene.getObjectByName("rocket");
       if (rocket) {
         if (keysPressed.ArrowUp) {
-          rocket.rotateX(-0.05);
+          rocket.rotateX(NEG_ROTATE_SPEED);
         }
         if (keysPressed.ArrowDown) {
-          rocket.rotateX(0.05);
+          rocket.rotateX(ROTATE_SPEED);
         }
         if (keysPressed.ArrowLeft) {
-          rocket.rotateZ(0.05);
+          rocket.rotateZ(ROTATE_SPEED);
         }
         if (keysPressed.ArrowRight) {
-          rocket.rotateZ(-0.05);
+          rocket.rotateZ(NEG_ROTATE_SPEED);
         }
 
         if (keysPressed.KeyW) {
-          rocket.translateY(0.1);
+          rocket.translateZ(-0.1);
         }
         if (keysPressed.KeyS) {
-          rocket.translateY(-0.1);
+          rocket.translateZ(0.1);
         }
         if (keysPressed.KeyA) {
           //rocket.translateX(-0.1);
