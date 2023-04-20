@@ -66,8 +66,8 @@ export default function Scene() {
 
         rocketObject.name = "rocket";
 
-        rocketObject.children.push(camera);
-
+        rocketObject.add(camera);
+        camera.position.z = 1;
         scene.add(rocketObject);
       });
     });
@@ -83,16 +83,16 @@ export default function Scene() {
       const rocket = scene.getObjectByName("rocket");
       if (rocket) {
         if (keysPressed.ArrowUp) {
-          rocket.rotateX(-0.01);
+          rocket.rotateX(-0.05);
         }
         if (keysPressed.ArrowDown) {
-          rocket.rotateX(0.01);
+          rocket.rotateX(0.05);
         }
         if (keysPressed.ArrowLeft) {
-          rocket.rotateZ(0.01);
+          rocket.rotateZ(0.05);
         }
         if (keysPressed.ArrowRight) {
-          rocket.rotateZ(-0.01);
+          rocket.rotateZ(-0.05);
         }
 
         if (keysPressed.KeyW) {
