@@ -9,7 +9,10 @@ export default function Home() {
     <>
       <div className="keys-parent-div">
         <div className="w-s-keys-div">
-          <img src={wKey} />
+          <img
+            src={wKey}
+            id="w-key"
+          />
           <img src={sKey} />
         </div>
         <div className="up-right-keys-div">

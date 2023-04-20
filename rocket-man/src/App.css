@@ -10,6 +10,10 @@
   color: white;
 }
 
+:root {
+  --key-animation-time: 100ms;
+}
+
 .keys-parent-div {
   display: flex;
 }
@@ -17,6 +21,16 @@
 .w-s-keys-div {
   display: flex;
   flex-direction: column;
+}
+#w-key:hover {
+  animation: w-key-hover var(--key-animation-time) linear;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+@keyframes w-key-hover {
+  100% {
+    transform: translate(-8px, -13px) rotate(-45deg);
+  }
 }
 .up-right-keys-div {
   display: grid;
