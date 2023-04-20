@@ -1,9 +1,38 @@
 import { useNavigate } from "react-router-dom";
+import upKey from "../assets/keys/up.png";
+import wKey from "../assets/keys/w.png";
+import sKey from "../assets/keys/s.png";
 
 export default function Home() {
   const navigate = useNavigate();
   return (
     <>
+      <div className="keys-parent-div">
+        <div className="w-s-keys-div">
+          <img src={wKey} />
+          <img src={sKey} />
+        </div>
+        <div className="up-right-keys-div">
+          {/*left*/}
+          <img
+            src={upKey}
+            style={{ transform: "rotate(-90deg)" }}
+          />
+          <div style={{ display: "grid" }}>
+            <img src={upKey} />
+            {/*down*/}
+            <img
+              src={upKey}
+              style={{ transform: "rotate(180deg)" }}
+            />
+          </div>
+          {/*right*/}
+          <img
+            src={upKey}
+            style={{ transform: "rotate(90deg)" }}
+          />
+        </div>
+      </div>
       <h3>Ready?</h3>
       <button
         className="gradient-button"

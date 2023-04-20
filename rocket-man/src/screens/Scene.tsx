@@ -9,6 +9,8 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 const ROTATE_SPEED = 0.02;
 const NEG_ROTATE_SPEED = -0.02;
+const MOVE_SPEED = 0.2;
+const NEG_MOVE_SPEED = -0.2;
 
 export default function Scene() {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -102,10 +104,10 @@ export default function Scene() {
         }
 
         if (keysPressed.KeyW) {
-          rocket.translateZ(-0.1);
+          rocket.translateZ(NEG_MOVE_SPEED);
         }
         if (keysPressed.KeyS) {
-          rocket.translateZ(0.1);
+          rocket.translateZ(MOVE_SPEED);
         }
         if (keysPressed.KeyA) {
           //rocket.translateX(-0.1);

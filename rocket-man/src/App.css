@@ -10,6 +10,20 @@
   color: white;
 }
 
+.keys-parent-div {
+  display: flex;
+}
+
+.w-s-keys-div {
+  display: flex;
+  flex-direction: column;
+}
+.up-right-keys-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: end;
+}
+
 .gradient-button {
   display: flex;
   flex-direction: column;
