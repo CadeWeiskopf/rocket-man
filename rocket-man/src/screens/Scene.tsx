@@ -6,6 +6,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader.js";
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 import { EXRLoader } from "three/examples/jsm/loaders/EXRLoader.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { useFrame } from "react-three-fiber";
 
 const ROTATE_SPEED = 0.02;
 const NEG_ROTATE_SPEED = -0.02;
@@ -14,6 +15,9 @@ const NEG_MOVE_SPEED = -0.2;
 
 export default function Scene() {
   const mountRef = useRef<HTMLDivElement>(null);
+  const particleSystemRef =
+    useRef<THREE.Points<THREE.BufferGeometry, THREE.PointsMaterial>>();
+  const particleGeometryRef = useRef<THREE.BufferGeometry>();
   const [keysPressed, setKeysPressed] = useState<{
     [ArrowUp: string]: boolean;
     ArrowDown: boolean;
@@ -33,6 +37,30 @@ export default function Scene() {
     KeyS: false,
     KeyD: false,
   });
+
+  const animateJets = () => {
+    const particleCount = 1000;
+    const particlePositions = new Float32Array(particleCount * 3);
+    const pyramidHeight = 2.0;
+    const pyramidBaseSize = 2.0;
+    for (let i = 0; i < particleCount; i++) {
+      const u = Math.random();
+      const v = Math.random();
+      const x =
+        pyramidBaseSize * (1 - Math.sqrt(u)) * Math.cos(2 * Math.PI * v);
+      const y = pyramidHeight * (1 - u);
+      const z =
+        pyramidBaseSize * (1 - Math.sqrt(u)) * Math.sin(2 * Math.PI * v);
+      particlePositions[i * 3] = x;
+      particlePositions[i * 3 + 1] = y;
+      particlePositions[i * 3 + 2] = z;
+    }
+    particleGeometryRef.current?.setAttribute(
+      "position",
+      new THREE.BufferAttribute(particlePositions, 3)
+    );
+  };
+
   useEffect(() => {
     // create a new scene
     const scene = new THREE.Scene();
@@ -76,6 +104,23 @@ export default function Scene() {
         rocketParent.add(camera);
         rocketParent.add(rocketObject);
 
+        const particleGeometry = new THREE.BufferGeometry();
+        particleGeometryRef.current = particleGeometry;
+        const particleMaterial = new THREE.PointsMaterial({
+          color: "white",
+          size: 0.1,
+          transparent: true,
+          opacity: 0.5,
+        });
+        const particleSystem = new THREE.Points(
+          particleGeometry,
+          particleMaterial
+        );
+        rocketParent.add(particleSystem);
+        particleSystem.rotateX(45);
+        particleSystem.translateY(-2);
+        particleSystemRef.current = particleSystem;
+
         scene.add(rocketParent);
       });
     });
@@ -105,9 +150,11 @@ export default function Scene() {
 
         if (keysPressed.KeyW) {
           rocket.translateZ(NEG_MOVE_SPEED);
+          animateJets();
         }
         if (keysPressed.KeyS) {
           rocket.translateZ(MOVE_SPEED);
+          animateJets();
         }
         if (keysPressed.KeyA) {
           //rocket.translateX(-0.1);
