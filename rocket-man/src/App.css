@@ -32,6 +32,16 @@
     transform: translate(-8px, -13px) rotate(-45deg);
   }
 }
+#s-key:hover {
+  animation: s-key-hover var(--key-animation-time) linear;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+@keyframes s-key-hover {
+  100% {
+    transform: translate(-8px, 13px) rotate(45deg);
+  }
+}
 .up-right-keys-div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

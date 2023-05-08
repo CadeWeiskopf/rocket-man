@@ -25,7 +25,16 @@ export default function Home() {
               displayButtonInfo("");
             }}
           />
-          <img src={sKey} />
+          <img
+            src={sKey}
+            id="s-key"
+            onMouseOver={() => {
+              displayButtonInfo("S goes backward");
+            }}
+            onMouseLeave={() => {
+              displayButtonInfo("");
+            }}
+          />
         </div>
         <div className="up-right-keys-div">
           {/*left*/}
