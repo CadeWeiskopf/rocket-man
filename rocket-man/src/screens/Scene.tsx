@@ -162,12 +162,12 @@ export default function Scene() {
           rocket.translateZ(MOVE_SPEED);
           //animateJets();
         }
-        if (keysPressed.KeyA) {
+        /*if (keysPressed.KeyA) {
           //rocket.translateX(-0.1);
         }
         if (keysPressed.KeyD) {
           //rocket.translateX(0.1);
-        }
+        }*/
       }
       renderer.render(scene, camera);
     };
