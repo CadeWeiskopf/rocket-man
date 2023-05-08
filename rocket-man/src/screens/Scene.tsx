@@ -86,10 +86,11 @@ export default function Scene() {
     scene.add(light);
 
     const mtlLoader = new MTLLoader();
-    mtlLoader.load("rocket.mtl", (materials) => {
-      materials.preload();
-      const objLoader = new OBJLoader();
-      objLoader.setMaterials(materials);
+    const objLoader = new OBJLoader();
+
+    mtlLoader.load("rocket.mtl", (rocketMat) => {
+      rocketMat.preload();
+      objLoader.setMaterials(rocketMat);
       objLoader.load("rocket.obj", (rocketObject) => {
         rocketObject.scale.x = 5;
         rocketObject.scale.y = 5;
@@ -123,6 +124,13 @@ export default function Scene() {
         particleSystemRef.current = particleSystem;
 
         scene.add(rocketParent);
+        /*mtlLoader.load("donut.mtl", (donutMat) => {
+          donutMat.preload();
+          objLoader.setMaterials(donutMat);
+          objLoader.load("donut.obj", (donutObj) => {
+            scene.add(donutObj);
+          });
+        });*/
       });
     });
 
