@@ -8,10 +8,11 @@ import { EXRLoader } from "three/examples/jsm/loaders/EXRLoader.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { useFrame } from "react-three-fiber";
 
-const ROTATE_SPEED = 0.02;
-const NEG_ROTATE_SPEED = -0.02;
+const ROTATE_SPEED = 0.04;
+const NEG_ROTATE_SPEED = -0.04;
 const MOVE_SPEED = 0.2;
 const NEG_MOVE_SPEED = -0.2;
+const ROCKET_FWD_SPEED = NEG_MOVE_SPEED * 4;
 
 export default function Scene() {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -137,6 +138,7 @@ export default function Scene() {
     // load the EXR environment map
     const gltfLoader = new GLTFLoader();
     gltfLoader.load("ge.glb", (gltf) => {
+      gltf.scene.scale.set(3, 3, 3);
       scene.add(gltf.scene);
     });
 
@@ -158,7 +160,7 @@ export default function Scene() {
         }
 
         if (keysPressed.KeyW) {
-          rocket.translateZ(NEG_MOVE_SPEED);
+          rocket.translateZ(ROCKET_FWD_SPEED);
           animateJets();
         } else {
           particleGeometryRef.current?.setAttribute(

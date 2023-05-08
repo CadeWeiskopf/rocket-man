@@ -18,7 +18,7 @@ export default function Home() {
           <img
             src={wKey}
             id="w-key"
-            onMouseOver={() => {
+            onMouseEnter={() => {
               displayButtonInfo("W goes forward");
             }}
             onMouseLeave={() => {
@@ -28,7 +28,7 @@ export default function Home() {
           <img
             src={sKey}
             id="s-key"
-            onMouseOver={() => {
+            onMouseEnter={() => {
               displayButtonInfo("S goes backward");
             }}
             onMouseLeave={() => {
