@@ -117,8 +117,9 @@ export default function Scene() {
           particleMaterial
         );
         rocketParent.add(particleSystem);
-        particleSystem.rotateX(45);
-        particleSystem.translateY(-2);
+        particleSystem.rotateX(46);
+        particleSystem.translateY(1.3);
+        particleSystem.translateZ(1);
         particleSystemRef.current = particleSystem;
 
         scene.add(rocketParent);
