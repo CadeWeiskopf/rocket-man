@@ -2,16 +2,28 @@ import { useNavigate } from "react-router-dom";
 import upKey from "../assets/keys/up.png";
 import wKey from "../assets/keys/w.png";
 import sKey from "../assets/keys/s.png";
+import { useState } from "react";
 
 export default function Home() {
   const navigate = useNavigate();
+  const [buttonInfo, setButtonInfo] = useState("");
+  const displayButtonInfo = (buttonInfo: string) => {
+    setButtonInfo(buttonInfo);
+  };
   return (
     <>
+      <div className="keys=info=div">{buttonInfo}</div>
       <div className="keys-parent-div">
         <div className="w-s-keys-div">
           <img
             src={wKey}
             id="w-key"
+            onMouseOver={() => {
+              displayButtonInfo("W goes forward");
+            }}
+            onMouseLeave={() => {
+              displayButtonInfo("");
+            }}
           />
           <img src={sKey} />
         </div>
