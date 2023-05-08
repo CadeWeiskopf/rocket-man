@@ -152,10 +152,15 @@ export default function Scene() {
         if (keysPressed.KeyW) {
           rocket.translateZ(NEG_MOVE_SPEED);
           animateJets();
+        } else {
+          particleGeometryRef.current?.setAttribute(
+            "position",
+            new THREE.BufferAttribute(new Float32Array(0), 3)
+          );
         }
         if (keysPressed.KeyS) {
           rocket.translateZ(MOVE_SPEED);
-          animateJets();
+          //animateJets();
         }
         if (keysPressed.KeyA) {
           //rocket.translateX(-0.1);
